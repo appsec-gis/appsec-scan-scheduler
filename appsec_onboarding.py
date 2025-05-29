@@ -135,6 +135,7 @@ def onboard_repo(repo, single_repo_mode=False):
 def main():
     input_repos = os.environ.get("REPO_NAMES")
     single_repo_mode = False
+    print(type(input_repos), input_repos)
     if input_repos == None:
         print("Input is missing..")
         return
