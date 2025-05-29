@@ -148,6 +148,8 @@ def main():
         repos = get_repos()
     
     for repo in repos:
+        if repo in [f"{ORG}/cxone-custom-action",f"{ORG}/appsec-scan-scheduler"]:
+            continue
         try:
             onboard_repo(repo, single_repo_mode=single_repo_mode)
         except Exception as e:
