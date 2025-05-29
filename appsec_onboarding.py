@@ -136,7 +136,7 @@ def main():
     input_repos = os.environ.get("REPO_NAMES")
     single_repo_mode = False
     print(type(input_repos), input_repos)
-    if input_repos == None:
+    if input_repos == "":
         print("Input is missing..")
         return
     if input_repos.lower() != "all":
