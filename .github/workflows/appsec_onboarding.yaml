@@ -5,7 +5,7 @@ on:
     inputs:
       repo_names:
         description: 'Names of the repositories seperated by commas ex: (repo1,repo2) or use "all" to Onboard all repos'
-        # required: false
+        required: true
         type: string
 
 jobs:
