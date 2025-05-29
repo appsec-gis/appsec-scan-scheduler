@@ -140,7 +140,7 @@ def main():
         print("Input is missing..")
         return
     if input_repos.lower() != "all":
-        repos = [ f"{ORG}/{repo}" for repo input_repos.replace(' ', '').split(',') ]
+        repos = [ f"{ORG}/{repo}" for repo in input_repos.replace(' ', '').split(',') ]
 
         if len(repos) == 1:
             single_repo_mode = True
