@@ -26,5 +26,5 @@ jobs:
       - name: Run onboarding script
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
-          REPO_NAMES: ${{ github.event.inputs.repo_name }}
+          REPO_NAMES: ${{ github.event.inputs.repo_names }}
         run: python3 appsec_onboarding.py
