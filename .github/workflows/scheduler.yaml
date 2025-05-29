@@ -23,7 +23,7 @@ jobs:
 
       - name: Run Scheduler Script
         env:
-          GITHUB_TOKEN: ${{ secrets.SCHEDULER_TOKEN }}  # Use your PAT here
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}  # Use your PAT here
           GITHUB_EVENT_NAME: ${{ github.event_name }}
         run: python scheduler.py
 
