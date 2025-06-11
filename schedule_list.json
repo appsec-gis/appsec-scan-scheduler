@@ -10,5 +10,9 @@
    {
     "repo_name": "appsec-gis/cxone-demo-3",
     "branch": "main"
+  },
+  {
+    "repo_name": "appsec-gis/cxone-demo-5",
+    "branch": "main"
   }
 ]
